@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cogolleros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado de la página -->
+  <header>
+    <h1>Cogolleros</h1>
+  </header>
+
+  <!-- Sección de contacto -->
+  <div class="form-container">
+    <h2>Formulario de Contacto</h2>
+    <form id="form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Tiempo</label>
+        <input type="text" name="time" id="time" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" required></textarea>
+      </div>
+
+      <button type="submit" id="button">Enviar Mensaje</button>
+      <div id="form-status"></div>
+    </form>
+  </div>
+
+  <!-- Sección de productos (Cogollos) -->
+  <section class="products">
+    <h2>Nuestros Cogollos</h2>
+    <div class="product-card">
+      <img src="cogollo1.jpg" alt="Cogollo 1">
+      <h3>Cogollo 1</h3>
+      <p>Descripción del Cogollo 1.</p>
+      <button>Ver Producto</button>
+    </div>
+    <div class="product-card">
+      <img src="cogollo2.jpg" alt="Cogollo 2">
+      <h3>Cogollo 2</h3>
+      <p>Descripción del Cogollo 2.</p>
+      <button>Ver Producto</button>
+    </div>
+    <div class="product-card">
+      <img src="cogollo3.jpg" alt="Cogollo 3">
+      <h3>Cogollo 3</h3>
+      <p>Descripción del Cogollo 3.</p>
+      <button>Ver Producto</button>
+    </div>
+  </section>
+
+  <!-- Cargar la librería de EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Script de funcionamiento -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
